@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.greenmouse.kaliope.MenuCatalogosActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Menú Catálogos"
+        android:id="@+id/txtTitulo"
+        android:layout_gravity="center_horizontal"
+        android:textSize="32dp"
+        android:textColor="#ec268f"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:id="@+id/btPrecios"
+    android:layout_marginTop="55dp"
+    android:adjustViewBounds="false"
+    android:layout_below="@+id/txtTitulo"
+    android:layout_alignParentStart="true"
+    android:src="@drawable/boton_precios"
+    android:background="@drawable/selector" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btPulseras"
+        android:layout_marginTop="55dp"
+        android:adjustViewBounds="false"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/pulseras"
+        android:background="@drawable/selector" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Precios"
+        android:textSize="18dp"
+        android:id="@+id/lbBtnPrecios"
+        android:textAlignment="center"
+        android:layout_below="@+id/btPrecios"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btPrecios" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pulseras"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/btPulseras"
+        android:layout_alignStart="@+id/btPulseras"
+        android:layout_alignEnd="@+id/btPulseras" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txSesion"
+        android:textSize="16dp"
+        android:textColor="#31338e"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="®Kaliope México 2017 \u2022 Powered by STSolutions &amp; GreenMouse"
+        android:id="@+id/txEstaus"
+        android:layout_gravity="bottom"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

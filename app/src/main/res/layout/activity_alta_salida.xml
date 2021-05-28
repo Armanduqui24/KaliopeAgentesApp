@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.greenmouse.kaliope.AltaSalidaActivity">
+
+    <TextView
+        android:id="@+id/txtTituloAltaSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Salida"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ec268f"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblEntregas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTituloAltaSalida"
+        android:layout_centerHorizontal="true"
+        android:text="(Entrega de Mercancía)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lblCodigoSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblEntregas"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="11dp"
+        android:text="Código:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtCodigoProductoSalida"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblCodigoSalida"
+        android:layout_toEndOf="@+id/lblCodigoSalida"
+        android:ems="10"
+        android:inputType="number"
+        android:nextFocusDown="@+id/txtCantidadProductosSalida"
+        android:nextFocusForward="@+id/txtCantidadProductosSalida" />
+
+    <TextView
+        android:id="@+id/lblCantidadSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblCodigoSalida"
+        android:layout_toEndOf="@+id/txtCodigoProductoSalida"
+        android:paddingBottom="11dp"
+        android:text="Cantidad:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtCantidadProductosSalida"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtCodigoProductoSalida"
+        android:layout_toEndOf="@+id/lblCantidadSalida"
+        android:ems="10"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/btnAgregarSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtCantidadProductosSalida"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/selector"
+        android:src="@drawable/icono_agregar" />
+
+    <ListView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblCodigoSalida"
+        android:layout_above="@+id/txtLimiteCredito"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/listViewSalida" />
+
+    <Button
+        android:id="@+id/btnTermineSalida"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mi_boton"
+        android:drawableLeft="@drawable/icono_termine"
+        android:text="Terminé"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/lblTotalPiezasSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTermineSalida"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:text="Piezas:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/rosa_klp" />
+
+    <TextView
+        android:id="@+id/txtPiezasTotalesSalida"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblTotalPiezasSalida"
+        android:layout_toEndOf="@+id/lblCodigoSalida"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/lblTotalSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/rosa_klp"
+        android:layout_alignBottom="@+id/txtImporteTotalSalida"
+        android:layout_toStartOf="@+id/txtImporteTotalSalida" />
+
+    <TextView
+        android:id="@+id/txtImporteTotalSalida"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignTop="@+id/txtPiezasTotalesSalida"
+        android:layout_alignParentEnd="true"
+        android:text="MMCDP"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/lblPlazo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Días: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/rosa_klp"
+        android:layout_above="@+id/lblLimiteCredito"
+
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtPlazoDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DD"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/lblGradoSalida"
+        android:layout_toEndOf="@+id/lblPlazo" />
+
+    <TextView
+        android:id="@+id/lblLimiteCredito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limite de Credito: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/rosa_klp"
+        android:layout_above="@+id/lblTotalPiezasSalida"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtLimiteCredito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MMCDP"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_above="@+id/lblTotalPiezasSalida"
+
+        android:layout_toEndOf="@+id/lblLimiteCredito" />
+
+    <TextView
+        android:id="@+id/lblFechaVencimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vence el: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/rosa_klp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBaseline="@+id/lblGradoSalida"
+        android:layout_alignBottom="@+id/txtPlazoDias"
+        android:layout_toEndOf="@+id/txtPlazoDias" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dd-mm-aaaa"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/txtFechaVencimeinto"
+        android:layout_alignBaseline="@+id/lblGradoSalida"
+        android:layout_toEndOf="@+id/lblFechaVencimiento" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Grado:"
+        android:id="@+id/lblGradoSalida"
+        android:textColor="@color/rosa_klp"
+        android:layout_marginRight="0dp"
+        android:layout_above="@+id/lblLimiteCredito"
+        android:layout_toStartOf="@+id/txtGradoSalida" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtGradoSalida"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_above="@+id/lblLimiteCredito"
+        android:layout_alignParentEnd="true" />
+
+    <!--
+    <Button
+        android:id="@+id/siguiente3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtTituloAltaSalida"
+        android:layout_toStartOf="@+id/lblEntregas"
+        android:text="Siguiente" />
+        -->
+
+    <!--<TextView
+        android:id="@+id/txtFechaVencimeinto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dd-mm-aaaa"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000"
+        android:textStyle="bold"
+
+        android:layout_toEndOf="@+id/lblFechaVencimiento" />-->
+
+</RelativeLayout>

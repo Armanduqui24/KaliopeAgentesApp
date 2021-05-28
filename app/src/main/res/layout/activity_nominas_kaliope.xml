@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="1sp"
+    android:paddingBottom="5sp"
+    android:paddingStart="5sp"
+    android:paddingEnd="5sp"
+    tools:context=".NominasKaliope">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:text="Consulta Tu Nomina"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Quien Eres?"
+            android:textColor="@color/colorNegro"
+            android:textSize="15sp"
+            />
+        <Spinner
+            android:id="@+id/spinnerAgenteNominasKaliope"
+            android:layout_marginStart="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semana:        "
+            android:textColor="@color/colorNegro"
+            android:textSize="15sp"
+            />
+        <Spinner
+            android:id="@+id/spinnerNumeroSemanaNominasKaliope"
+            android:layout_marginStart="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:backgroundTint="@color/colorAccent"
+            >
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/nominasKaliopeCodigoET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:hint="codigo"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="numberPassword"
+            />
+
+
+        <Button
+            android:id="@+id/nominasKaliopeConsultarB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:text="Consultar:"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearNominas"
+            >
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

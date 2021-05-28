@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.greenmouse.kaliope.InventarioActivity"
+    android:orientation="vertical"
+    android:paddingStart="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Inventario Actual"
+        android:layout_gravity="center_horizontal"
+        android:textSize="32dp"
+        android:textColor="#ec268f"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <!--
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Exportar"
+        android:id="@+id/btExportar"
+        android:background="@drawable/mi_boton"
+        android:textColor="#ffffff"
+        android:drawableLeft="@drawable/icono_exportar"
+        android:paddingLeft="0dp"
+        android:paddingRight="10dp"
+         />
+
+     -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+
+        <Button
+            android:id="@+id/btMostrarDetalle"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:contextClickable="true"
+            android:text="Mostrar Detalle"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btImprimir"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/mi_boton"
+            android:contextClickable="true"
+            android:drawableLeft="@drawable/icono_impresora"
+            android:elegantTextHeight="false"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp"
+            android:text="Imprimir"
+            android:textColor="#ffffff"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version: "
+            android:textSize="20sp"
+            android:textColor="@color/rosa_klp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtVersionInv"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL DE EXISTENCIAS: "
+            android:textSize="14dp"
+            android:textColor="@color/rosa_klp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtExistencias"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMPORTE DE LAS EXISTENCIAS: "
+        android:id="@+id/textView4"
+        android:textSize="14dp"
+        android:textColor="@color/rosa_klp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtImporte"
+        android:textSize="14dp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VEN"
+            android:textAlignment="center"
+            />
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="SOC"
+        android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EMP"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PRECIO"
+            android:textAlignment="center"
+            android:textColor="@color/colorNegro"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EXIS"
+            android:textAlignment="center"
+            android:textColor="@color/colorNegro"
+            android:textSize="18sp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvInventario"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

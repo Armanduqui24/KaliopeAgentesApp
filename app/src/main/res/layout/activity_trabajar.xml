@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:paddingBottom="5dp"
+    tools:context=".Trabajar">
+
+    <ImageButton
+        android:id="@+id/irAClientesB"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorRepaso"
+        android:src="@drawable/clientes"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuestros Clientes"
+        android:layout_below="@+id/irAClientesB"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/colorNegro"
+        />
+
+    <ImageButton
+        android:id="@+id/irNuevoClienteB"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/irAClientesB"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nuevocliente"
+        android:textAppearance="?android:attr/textAppearanceListItem"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar Nuevo Cliente"
+        android:layout_below="@+id/irNuevoClienteB"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/colorNegro"
+        />
+
+
+    <ImageButton
+        android:id="@+id/Button103"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/irNuevoClienteB"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="false"
+        android:src="@drawable/listamovimientos"
+        android:background="@drawable/selector" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Lista de Movimientos"
+        android:layout_below="@+id/Button103"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="20sp"
+        android:textColor="@color/colorNegro"
+        android:textAlignment="center"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.greenmouse.kaliope.RealizarEntrega"
+    android:orientation="vertical"
+    android:padding="3dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Entrega de mercancia"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ec268f"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/RealizarEntregaLayoutDatosCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/border_blue"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/RealizarEntregaNombre"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="nombre"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/RealizarEntregaEstadoCliente"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Activo"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Credito"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Grado"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Dias"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Puntos"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaLimiteCredito"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="1500"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro"
+
+                    />
+
+                <TextView
+                    android:id="@+id/RealizarEntregaGrado"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="empresaria"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro"
+
+                    />
+
+                <TextView
+                    android:id="@+id/RealizarEntregaDias"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="28"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro"
+
+                    />
+
+                <TextView
+                    android:id="@+id/RealizarEntregaPuntosTotales"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="350"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/RealizarEntregaSubTituloMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="No cumplio con su pago minimo ejemploo"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorLio"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/RealizarEntregaBotonNoPuedeRecibirMercanciaCredito"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:background="@drawable/border"
+                android:text="-No puede recibir mercancia a credito"
+                android:layout_margin="3dp"
+                android:textSize="12sp"
+                />
+
+            <Button
+                android:id="@+id/RealizarEntregaBotonNoPuedeCanjearPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:background="@drawable/border"
+                android:text="-No puede canjear puntos"
+                android:layout_margin="3dp"
+                android:textSize="12sp"
+                />
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Codigo:"
+                />
+
+            <EditText
+                android:id="@+id/RealizarEntregaCapturaCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="number"
+                android:nextFocusDown="@id/RealizarEntregaCapturaCantidad"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad:"
+                />
+
+            <EditText
+                android:id="@+id/RealizarEntregaCapturaCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="number"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ListView
+            android:id="@+id/RealizarEntregaLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            >
+
+        </ListView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/RealizarEntregaLayoutCredito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/border_blue"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entregas a credito"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Piezas"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Importe:"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Vence"
+                    android:textAlignment="center"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/RealizarEntregaCreditoPiezas"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaCreditoImporte"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaVence"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="1500"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro"
+
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/RealizarEntregaBotonAnularCreditoExcedido"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:background="@drawable/border_luisda"
+                android:text="Anular Redondeo"
+                android:layout_margin="3dp"
+                android:textSize="10sp"
+                android:padding="3dp"
+                />
+
+            <TextView
+                android:id="@+id/RealizarEntregaMensajeAdvertenciaLayoutCredito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limite de credito excedido"
+                android:textAlignment="center"
+                android:textColor="@color/colorLio"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/RealizarEntregaLayoutRegalos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/border_pink"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regalos"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Capturados"
+                    android:textAlignment="center"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Canjeados"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Puntos Restantes"
+                    android:textAlignment="center"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaRegalosPiezasCapturadas"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+
+
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaPuntosCanjeados"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="149"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaPuntosRestantes"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="-27"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/RealizarEntregaBotonAnularRedondeoPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:background="@drawable/border"
+                android:text="Anular redondeo"
+                android:layout_margin="3dp"
+                android:textSize="10sp"
+                android:padding="3dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/RealizarEntregaMensajeAdvertenciaLayoutPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/RealizarEntregaLayoutContado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/border_green"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ventas al Contado"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Contado"
+                    android:textAlignment="center"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Por pagar"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Puntos ganados"
+                    android:textAlignment="center"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaContadoPiezas"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaContadoPagoTotal"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="1560"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+                    />
+
+
+                <TextView
+                    android:id="@+id/RealizarEntregaContadoPuntosGanados"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/RealizarEntregaMensajeAdvertenciaLayoutContado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limite de credito excedido"
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/RealizarEntregaBotonSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Siguiente->"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

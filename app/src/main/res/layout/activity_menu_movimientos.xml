@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="mx.greenmouse.kaliope.MenuMovimientosActivity">
+
+    <TextView
+        android:id="@+id/txtTituloMM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Movimientos"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ec268f"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Entradas:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:id="@+id/txtTotalEntradas"
+            android:textStyle="bold" />
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginStart="30dp"
+            android:text="Salidas:"
+            android:id="@+id/textView6"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:id="@+id/txtTotalSalidas"
+            android:textStyle="bold" />
+
+
+
+
+
+        <TextView
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pagos:  "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00000"
+            android:id="@+id/txtTotalPagos"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="ID"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="NOMBRE"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CTA"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ENT"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAL"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PAGO"
+            android:textAlignment="center"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lvMovimientos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnImprimeMovimientos"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <Button
+            android:id="@+id/btExportarMovimientos"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/mi_boton"
+            android:drawableLeft="@drawable/icono_exportar"
+            android:text="Exportar"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Imprimir"
+            android:id="@+id/btnImprimeMovimientos"
+            android:background="@drawable/mi_boton"
+            android:drawableLeft="@drawable/icono_impresora"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FFF" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

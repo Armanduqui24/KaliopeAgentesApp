@@ -1,0 +1,173 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    //buildToolsVersion 27.0.3
+    defaultConfig {
+        //applicationId "mx.greenmouse.kaliope"
+        applicationId "mx.kaliope.luisda"
+        minSdkVersion 21
+        targetSdkVersion 28 //24
+        versionCode 20
+        versionName "7.0.1"
+
+        /*
+        * VERSION NAME 6.3
+        * Se añade el apartado de Mapa, aun en version de prueba pero ya permite cargar los clientes
+        * desde la base de datos de clientes, al hacer click a una chincheta te envia a ver el detalle
+        * del cliente, al hacer clic sostenido en el item de la lista de clientes te envia a la ubicacion
+        * en el mapa.
+        * Como mejora se añade el campo codigo en la consulta de nominas debido a que los agentes
+        * podian consultar todas las nominas de quien sea, ahora tendran que ingresar un codigo
+        * que concuerda con el campo pulcera del sistema KaliopeEnLaNube para poder consultar sus datos
+        * Consltamos el versionName en el MainActivity para mostrarlo en la UI
+        *
+        *
+        * VERSION NAME 6.4
+        * Se corrigen errores, cuando la app caducaba, se llamaba varias veces el cuadro de dialogo
+        * porque se llama en el onresume, cada que se minimisaba la app, se encimaba otro dialogo
+        * solicitando la activacion. ahora cunaod el MainActivity entra en onStop lo finalizamos
+        * para que tenga que volver a iniciarce.
+        *
+        * Cuando la app se baja desde la playstore los permisos por default estan desactivados,
+        * entonces solicitamos los permisos al usuario en el main activity, al hacer clic al boton
+        * ingresar, si no se autorizan la app no libera el el boton ingresar, una ves autorizados
+        * en tiempo de ejecucion, la app llama a los metodos como el servicio de localizacion y
+        * para escribir en la memoria
+        * permisos solicitados, WRITE_EXTERNAL_STORAGE, UBICACION Y CAMERA
+        *
+        * Al descargar de playstore, y cargar el archivo pulceras la app tardaba en lo que los cargaaba
+        * al parecer desde la playstore dan menos tiempo para que el hilo principal se quede trabado
+        * antes de marcar que kaliope no responde. para resolver eso, corremos en un Hilo secundario
+        * la carga de las pulceras y borramos varios toast y algunos los corremos en el hilo principal
+        *
+        * VersionName 6.4.1 al 6.4.3 del 9 10 y 11 fueron versiones para tratar de corregir lo de los mapas de google
+        * Correccion en problema de Keys en maps, api debug y api release
+        * ya quedo, el problema es que en la GooglePlay console al subirla a la playstore la firma con otro certificado SHA1
+        * que viene en gestion de versiones, firma de apps, y ahi viene el sertificado el p´rimero es ocn el que google las firma al subirlas
+        * y el segundo es cuando yyo lo firmo al hacer la app release y construior el apk
+        * https://es.stackoverflow.com/questions/183594/porque-mi-app-no-muestra-mapa-al-descargarla-de-playstore
+        * entonces en el registro de apis al crear una credencial de los mapas ya tengo 3, la credencial con el certificado debug
+        * la credencial independiente para el release con el sertificado que da mi archivo al firmar mi app cuando la construllo
+        * y a esa misma clave le añadi otra restriccion con el mismo nombre de paquete porque ese no cambio pero solo con la clave SAH1 que me da
+        * google play console. y ya asi funcionaron los mapas de la app que se descarga de playstore.
+        * lo que pasaba era que al construir mi app en release, la mandaba directo al movil y abria los mapas bien, pero cuando la subia a
+        * la playstore y la descargabas desde ahi, los mapas ya no se abrian!!!
+        *
+        *
+        *
+        * VersionName 6.5 -6.5.1 --12,13,14 VersionNameLuisda6.5 Version de base de datos de 1 a 2
+        * Permite conectarse al servidor en el main activity para activar la app automaticamente, descargar
+        * los datos de la ruta a la que pertenece el movil, la pulcera que lo librea, el agente al que
+        * pertenece, y descarga automaticamente el catalogo de precios desde el servidor.
+        * Sufre cambios en el mapa, donde ahora desplega el perimetro de la zona, las coordenadas
+        * se envian en el archivo de clientes.
+        * El archivo de pulceras ya no se carga mas.
+        * Dejamos de mostrar la clave api en el onLongClic del boton mapa
+        *
+        * VersionName 6.5.2 -15 VersionNameLuisda6.5 Version de la base de datos de 1 a 2
+        * Se cambia, en el grandle app, minifyEnabled true para que se redusca el peso de la app
+        * y para que se "ofusque" el codigo y sea algo mas complicado aplicar la ingenieria
+        * inversa con la apk.
+        *
+        *
+        * VersionName 6.6 - 16 VersionNameLuisda6.6 Version de la base de datos de 2 a 3
+        * Se elimina la tabla precios de la base de datos, ahora los precios de vendedora empresaria y socia
+        * se guardaran en el inventario, el archivo de inventario a cambiad ahora se añaden el precio de empresaria
+        * y socia, por lo tanto el txt ahora tendra 6 columnas, se modifico en la improtacion del inventario
+        * se sustituyo el metodo que consultaba los precios entre el inventario y el catalodo de precios se llamaba
+        * dameInfoProducto
+        * se crea el nuevo llamado
+        * getInfoProduct
+        * se modificaron igualmente las consultas de altaSalida, altaEntrada, MovimientoAutomatico
+        * donde se usaba el antiguo metodo para sacar los precios de la tabla prices
+        * asi, al movil solo se tendran que cargar solo el inventario y en el ya vendra incluido la lista de precios
+        *
+        * Se crea inicio de sesion con conexion al servidor, para descargar clientes, descargar el inventario cargar inventario
+        * cargar clientes, con esto hemos quitado por completo a airDroid, las modificaciones al inventario se hacen directo del servidor
+        * kaliope.
+        *
+        * VersionName 6.7-17 Version de base de datos igual
+        * Hacemos que cuando el movil haga ping y consulte una nueva version del inventario, a su vez reciba los movimientos
+        * que se generaron en la handheld de almacen, recibira el array con las piezas y con la informacion de si es entrada o salida
+        * afectara su inventario y generara el movimiento en la cadena de mensajes. Enviaremos solo los movimientos que no esten ya enviados al movil.
+        * Quitamos el boton de escanear pulcera en la pantalla de inicio de sesion
+        * Permitimos en el inventario que el usuario pueda ver los precios de distribucion como empresaria socia y vendedora, pero seguimos haciendo invisible el numero de existencias
+        * Cambiamos la vista de la lista de los movimientos, ponemos el nombre de la clienta en la lista antes solo se mostraba el ID, y hacemos mas grandes cada item
+        * Agregamos como icono del gps el carrito de kaliope
+        *
+        * VersionName 6.8-18 Version base de datos es igual
+        * Correguimos el constructor del assync clientt, para que funcione con sistemas operativos mas viejitos,
+        * como lo que ocurrio con las handheld de almacen, en la clase KaliopeServerClient
+        *
+        * Tambien hacemos que cuando se cree un nuevo movimiento de almacen copie la cadena al portapapeles
+        *
+        *
+        * Version name 7.0-19  7.0.1 -20  Version base de datos de 3-4
+        * Cambiamos la manera en como se realizan los movimientos de almacen, el mayor cambio fue en el servidor
+        * en el telefono movil solo cambiamos el archivo a donde se conecta
+        *
+        * Habilitamos que el telefono pueda recibir 2 rutas diferentes con clientes diferentes esto para
+        * cuando sea necesario juntar 2 rutas en el mismo dia, el telefono recibe las cuentas
+        * para esto añadimos en la tabla de clientes una columna extra donde a cada cliente marcara que ruta pertenese
+        * marcara en el mapa las 2 rutas y sus zonificaciones
+        *
+        * Se añade la prioridad de visita de los clientes
+        *
+        * Se cambia completamente
+        *
+        * ewn la 7.0.1 20 corregimos el problema con las coordenadas, la base de datos estaba en NUMERIC y
+        * las coordenadas se cortaban a 4 o 3 decimales, afectando la presicion en el mapa y las cuentas
+        * se movian a otros lugares
+        *
+        * 
+        *
+        *
+        *
+
+        * */
+
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            //activamos la reduccion de codigo por proguard https://developer.android.com/studio/build/shrink-code?hl=es-419
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //añadimos al archivo proguard-android.txt la etiqueta -ignorewarnings porque al compilar marcaba errores y no compilaba la de produccion, ahora marca los errores pero ya compila, probe la app y parece que funciona okay
+            //https://stackoverflow.com/questions/41454128/transformclassesandresourceswithproguardforrelease-failed
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    //implementation 'com.android.support:appcompat-v7:24.2.1'
+    implementation 'com.android.support:design:24.2.1'
+    implementation 'com.android.support:support-v4:24.2.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    implementation 'com.google.android.gms:play-services-vision:15.0.2'
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+
+    //Dependencias AsyncHttpClient     https://loopj.com/android-async-http/
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+
+    implementation 'com.google.maps.android:android-maps-utils:0.5+' //dependencia para kml files
+
+}

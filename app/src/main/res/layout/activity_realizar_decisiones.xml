@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.greenmouse.kaliope.RealizarDecisiones"
+    android:paddingStart="5sp"
+    android:paddingEnd="5sp"
+    android:paddingTop="5sp"
+    android:paddingBottom="5sp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Que quieres hacer?"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ec268f"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/RealizarDecisionesLayoutEntregaMercancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/border_luisda"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:paddingBottom="5sp"
+            >
+
+            <TextView
+                android:id="@+id/RealizarDecisionesTituloEntregaMercancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="Entregar Mercancia"
+                />
+
+            <Button
+                android:id="@+id/RealizarDecisionesBotonEntregaMercancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entregar Mercancia para venta"
+                />
+
+            <TextView
+                android:id="@+id/RealizarDecisionesMensajeEntregaMercancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No podemos entregar mercancia a tu cliente porque no realizo el pago pendiente"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/RealizarDecisionesLayoutDarDeBaja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/border_luisda"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:paddingBottom="5sp"
+            >
+
+            <TextView
+                android:id="@+id/RealizarDecisionesTituloDarDeBaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="La clienta no quiere mas mercancia"
+                />
+
+            <Button
+                android:id="@+id/RealizarDecisionesBotonDarDeBaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dar de baja"
+                />
+
+            <TextView
+                android:id="@+id/RealizarDecisionesMensajeDarDeBaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi clienta ya no quiere mercancia"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/RealizarDecisionesLayoutFinalizarMovimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/border_luisda"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:paddingBottom="5sp"
+            >
+
+            <TextView
+                android:id="@+id/RealizarDecisionesTituloFinalizarMovimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="Finalizar el movimiento"
+                />
+
+            <Button
+                android:id="@+id/RealizarDecisionesBotonFinalizarMovimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finalizar"
+                />
+
+            <TextView
+                android:id="@+id/RealizarDecisionesMensajeFinalizarMovimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi clienta ya no quiere mercancia"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

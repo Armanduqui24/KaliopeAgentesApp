@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="380dp"
+    android:orientation="horizontal"
+    android:paddingBottom="2sp"
+    android:paddingTop="2sp"
+    tools:context="mx.greenmouse.kaliope.MenuPrincipalActivity"
+    android:id="@+id/layoutEstado2"
+    >
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorTodos"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:layout_gravity="center_vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/cuentaTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1029"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/nombreTV"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="NombreCliente"
+                android:textAllCaps="true"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Estado:"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Prioridad:"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5sp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/estadoClienteTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Activo"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_marginStart="5dp"
+                android:textSize="17dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/prioridadDeVisitaTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5sp"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <!--Ponemos la height como fija para que solo se muestre una parte del mensaje
+            con los saltos de linea evitamos que "quepa" el resto del mensaje en este recuadro-->
+            <TextView
+                android:id="@+id/mensajeAmostrarVisitaTV"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Dias de atraso:"/>
+
+            <TextView
+                android:layout_marginStart="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:text="Acargo:"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:textAlignment="center"
+                android:text="Adeudo:"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/diasEnAtrasoTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+
+
+            <TextView
+                android:id="@+id/acargoTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="1099"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:id="@+id/adeudoTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Zona:"/>
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:textAlignment="center"
+                android:text="Vence:"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+            <TextView
+                android:id="@+id/nombrezonaTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Polotitlan"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                />
+
+
+
+
+
+            <TextView
+                android:id="@+id/vencimientoTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="04/05/2018"
+                android:textSize="12dp"
+                android:textColor="#000000"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutEstado"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorRepaso">
+
+        <TextView
+            android:id="@+id/estadoVisitaTVcolor"
+            android:layout_width="8dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:text="TODOS"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorVisitado"
+    tools:context=".FragmentParametrosClientes"
+    android:id="@+id/fragment1"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar Parametros del cliente"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grado del Cliente:"
+            android:textColor="@color/colorNegro"
+            android:textSize="22sp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerGradoCliente1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginStart="20dp"
+            >
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dias de Credito:   "
+            android:textColor="@color/colorNegro"
+            android:textSize="22sp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerDiasCredito1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginStart="20dp"
+            >
+        </Spinner>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limite de Credito:"
+            android:textColor="@color/colorNegro"
+            android:textSize="22sp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerLimiteCredito1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginStart="20dp"
+            >
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonAceptarParametrosClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorBlanco"
+        />
+
+
+
+</LinearLayout>

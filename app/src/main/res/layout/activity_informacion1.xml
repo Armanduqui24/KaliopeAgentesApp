@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Informacion1Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Numero de tarjeta para depocitos en OXXO o directo en ventanilla BANCOMER:"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="4772-1430-0714-4799"
+        android:textColor="#000000"
+        android:textSize="34dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:text="Dale este numero de tarjeta a tu cliente recuerdale que guarde su comprobante una vez que realice el depocito."
+        android:textSize="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/exportarEmergenciaBi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exportar Movimientos"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorBlanco"
+        android:text="Imprimir"
+        />
+
+
+
+</LinearLayout>

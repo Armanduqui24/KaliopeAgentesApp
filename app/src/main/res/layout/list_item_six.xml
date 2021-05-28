@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/FirstText"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:text="First"
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/SecondText"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:text="SecondText"
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ThirdText"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:text="ThirdText"
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/FourthText"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:text="FourthText"
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/FifthText"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:text="FifthText"
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/SixthText"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:text="FifthText"
+        android:layout_weight="1"
+        android:textSize="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textAlignment="center">
+    </TextView>
+</LinearLayout>

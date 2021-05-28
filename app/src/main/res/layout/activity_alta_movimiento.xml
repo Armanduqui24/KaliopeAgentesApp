@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.greenmouse.kaliope.AltaMovimientoActivity"
+    android:id="@+id/activityLuisda111"
+    >
+
+
+
+
+
+    <TextView
+        android:id="@+id/txtTituloAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Alta de Movimiento"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ec268f"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTituloAM"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/txtFechaMov"
+        android:paddingBottom="11dp"
+        android:text="Fecha:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtFechaMov"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblFecha"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/lblCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblFecha"
+        android:paddingBottom="5dp"
+        android:text="Cuenta:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtCuentaMov"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblCuenta"
+        android:layout_toEndOf="@+id/lblCuenta"
+        android:ems="10"
+        android:inputType="number"
+        android:nextFocusDown="@+id/txtCodigoMov"/>
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNombre"
+        android:layout_alignBottom="@+id/txtNombre"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="11dp"
+        android:text="Nombre:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtCuentaMov"
+        android:layout_toEndOf="@+id/lblNombre"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/lblReporteMovimiento"
+        android:layout_width="277dp"
+        android:layout_height="63dp"
+        android:layout_alignBottom="@+id/btnReporteVisita"
+        android:layout_alignEnd="@+id/txtFechaMov"
+        android:layout_marginBottom="-25dp"
+        android:text="FIRMA DE VOZ DEL CLIENTE"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView
+        android:id="@+id/scrollAM"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/lblReporteMovimiento"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/border">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/adeudoAM"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADEUDO:"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/adeudoTVam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/adeudoAM"
+                android:layout_alignBaseline="@id/adeudoAM"
+                android:text=""
+                android:textSize="25dp"
+                android:textColor="@color/colorLio"
+                />
+
+            <TextView
+                android:id="@+id/aCargoAM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/aCargoTVam"
+                android:layout_marginEnd="5dp"
+                android:layout_alignBaseline="@id/adeudoAM"
+                android:text="A CARGO:"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/aCargoTVam"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_alignBaseline="@id/aCargoAM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/puntosAM"
+                android:layout_below="@id/adeudoAM"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PUNTOS DISP:"/>
+
+            <TextView
+                android:id="@+id/puntosTVam"
+                android:layout_toEndOf="@+id/puntosAM"
+                android:layout_alignBaseline="@id/puntosAM"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/vencimientoAM"
+                android:layout_alignBaseline="@id/puntosAM"
+                android:layout_toStartOf="@+id/vencimientoTVam"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VENCE:"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/vencimientoTVam"
+                android:layout_alignBaseline="@id/puntosAM"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/mercanciaAM"
+                android:layout_below="@id/puntosAM"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MERCANCIA ACARGO:"
+                />
+
+
+            <TextView
+                android:id="@+id/mercanciaTVam"
+                android:layout_below="@id/mercanciaAM"
+                android:layout_centerHorizontal="true"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:id="@+id/historialPagosAM"
+                android:layout_below="@id/mercanciaTVam"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HISTORIAL DE PAGOS:"/>
+
+            <TextView
+                android:id="@+id/historialTVam"
+                android:layout_below="@id/historialPagosAM"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="#000000"/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/reporteAM"
+                android:layout_below="@id/historialTVam"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REPORTE DE LA VISITA ANTERIOR:"/>
+
+            <TextView
+                android:id="@+id/reporteTVam"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/reporteAM"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/indicacionesAM"
+                android:layout_below="@+id/reporteTVam"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INDICACIONES DE ADMINISTRACION:"/>
+
+            <TextView
+                android:id="@+id/indicacionesTVam"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/indicacionesAM"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <ImageButton
+        android:id="@+id/btnEntradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollAM"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/selector"
+        android:src="@drawable/boton_devoluciones" />
+
+    <ImageButton
+        android:id="@+id/btnPagosN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnEntradas"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector"
+        android:src="@drawable/boton_pagos" />
+
+    <ImageButton
+        android:id="@+id/btnSalidasN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnPagosN"
+        android:background="@drawable/selector"
+        android:src="@drawable/boton_salidas" />
+
+    <TextView
+        android:id="@+id/lblEntradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnEntradas"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnPagosN"
+        android:text="Entradas"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lblPagos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblEntradas"
+        android:layout_alignEnd="@+id/btnPagosN"
+        android:layout_alignStart="@+id/btnPagosN"
+        android:layout_below="@+id/btnPagosN"
+        android:text="Pagos"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lblSalidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btnSalidasN"
+        android:layout_below="@+id/btnSalidasN"
+        android:text="Salidas"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btImprimirMovimiento"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lblEntradas"
+        android:background="@drawable/mi_boton"
+        android:drawableLeft="@drawable/icono_guardar"
+        android:text="Guardar"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnEliminarMovimiento"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lblEntradas"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/mi_boton"
+        android:drawableLeft="@drawable/icono_eliminar"
+        android:text="Eliminar"
+        android:textColor="#FFF" />
+
+    <ImageButton
+        android:id="@+id/btnReporteVisita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtNombre"
+        android:background="@drawable/selector"
+        android:src="@drawable/icono_agregar" />
+
+
+
+    <!--
+     <Button
+         android:id="@+id/siguiente1Button"
+         android:layout_marginTop="10dp"
+         android:layout_marginStart="10dp"
+         android:text="siguiente"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+         -->
+
+</RelativeLayout>

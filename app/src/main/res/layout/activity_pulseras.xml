@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pulseras"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Base de datos Pulseras"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:text="Pulseras totales Registradas: "
+    android:textColor="#000000"
+    android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 520 "
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selecciona que pulsera controla este dispositivo:"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerPulsera"
+        android:layout_width="204dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btPulserasCargarBaseDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="Cargar Base de Datos"
+        />
+
+    <Button
+        android:id="@+id/btPulserasBorrarBaseDeDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Borrar Base de Datos"
+        />
+
+
+
+
+
+
+</LinearLayout>

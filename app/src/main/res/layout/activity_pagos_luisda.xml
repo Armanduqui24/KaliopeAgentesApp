@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="5dp"
+    tools:context=".PagosLuisda">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Pagos"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp" />
+
+
+    <Button
+        android:id="@+id/terminePagosButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:text="Siguiente -->"
+        android:background="@drawable/mi_boton"
+        android:textColor="#FFF"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:text="Ahora captura el pago de tu cliente" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_below="@+id/textView32"
+        android:paddingBottom="15dp"
+        android:background="@android:color/background_light">
+
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Nuestro Cliente:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView34"
+            android:layout_marginEnd="20dp"
+            android:text="Adeudo anterior del cliente"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView55"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="250"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView34"
+            android:layout_toStartOf="@+id/textView34"
+            android:text="$"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView37"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:text="Venta Generada"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView38"
+            android:layout_toStartOf="@+id/textView38"
+            android:text="$"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView34"
+            android:layout_centerHorizontal="true"
+            android:text="500"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView38"
+            android:layout_toStartOf="@+id/textView37"
+            android:text="+"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView38"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-30dp"
+            android:text="_________"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView42"
+            android:layout_toStartOf="@+id/textView42"
+            android:text="="
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView43"
+            android:layout_toStartOf="@+id/textView43"
+            android:text="$"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView40"
+            android:layout_centerHorizontal="true"
+            android:text="750"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView43"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textView43"
+            android:text="Total a Liquidar"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView54"
+            android:layout_marginStart="10dp"
+            android:text="Maria Guadalupe Martinez"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView50"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="debe liquidar la cantidad de:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView55"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/textView55"
+            android:text="$"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView55"
+            android:layout_toEndOf="@+id/textView56"
+            android:text="1455"
+            android:textColor="@color/colorAccent"
+            android:textSize="27sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:background="@android:color/background_light"
+        >
+
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/editText"
+            android:text="A continuacion ingresa la cantidad a Pagar:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText"
+            android:layout_toStartOf="@+id/editText"
+            android:text="$"
+            android:textColor="#000000"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textView66"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:textSize="26sp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView66"
+            android:layout_toEndOf="@+id/textView66"
+            android:text="250"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView46"
+            android:layout_alignStart="@+id/editText"
+            android:text="Faltan $"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textVie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView66"
+            android:layout_toEndOf="@+id/textView67"
+            android:text="para el pago completo"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textView59"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="Recuerda que tu cliente debe pagar el 100% de la deuda, si no puede pagarlos debera cubrir minimo el 80% del total para poderle entregar mercancia" />
+
+
+        <!--aqui esta ordenado de abajo hacia arriba, el padre es el ultimo textView-->
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView60"
+            android:layout_alignStart="@+id/textView60"
+            android:text="El 80% es:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textView60"
+            android:layout_alignBaseline="@+id/textView60"
+            android:text="850"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:text="$"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22dp" />
+
+
+
+        <!-- Apartir aqui acomodamos de abajo hacia arriba el padre seria el ultimo textView-->
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView63"
+            android:layout_alignStart="@+id/textView63"
+            android:layout_marginEnd="50dp"
+            android:text="Faltan:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView63"
+            android:layout_toEndOf="@+id/textView63"
+            android:text="250"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView65"
+            android:layout_above="@+id/textView65"
+            android:text="$"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="40dp"
+            android:text="para el 80%"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="1dp"
+    android:id="@+id/ListEntregaMercanciaLayout"
+    >
+
+
+    <TextView
+        android:id="@+id/ListEntregaMercanciaPiezas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="piezas"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+
+        />
+
+    <TextView
+        android:id="@+id/ListEntregaMercanciaPrecio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="precio"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+
+        />
+
+
+    <TextView
+        android:id="@+id/ListEntregaMercanciaDistribucion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="dist"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textAlignment="center"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ListEntregaMercanciaGrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="grado"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/ListEntregaMercanciaDistUnitario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="grado"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/ListEntregaMercanciaGananciaUnitaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="grado"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/ListEntregaMercanciaCreditoContadoRegalo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="regalo"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textAlignment="center"
+
+        />
+
+
+
+
+
+</LinearLayout>

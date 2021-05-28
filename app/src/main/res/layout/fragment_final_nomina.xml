@@ -1,0 +1,1194 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="luisda.fragments.FinalNominaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10sp"
+        android:background="@color/colorRepaso"
+        android:orientation="vertical">
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/FragmentFinalNominaTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Nomina Final:"
+            android:textColor="@color/colorNegro"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Del:"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Al:"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaFechaInicial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="22-01-2019"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaFechaFinal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="27-05-2019"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="********Resultados De la semana**********"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Ventas:"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="Nuevas:"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="Lios:"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaVentasTotales"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="27580"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaNuevasTotales"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaLiosTotales"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="150"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="********Calculo de Nomina**********"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Sueldo Base:"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaSueldoBase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="1000"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Comision:+"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaComision"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="875.3"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Lios 21%: +"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaLios"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="110"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Nuevas:+"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaNuevas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="80"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+        <!-- 3 conceptos-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="Bonos:+"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaBono1Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.1"
+                android:text="600"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaBono1Concepto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="conceptoDeBonos"
+                android:textColor="@color/colorNegro"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="Bonos:+"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaBono2Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.1"
+                android:text="600"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaBono2Concepto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="conceptoDeBonos"
+                android:textColor="@color/colorNegro"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="Bonos:+"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaBono3Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.1"
+                android:text="600"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaBono3Concepto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="conceptoDeBonos"
+                android:textColor="@color/colorNegro"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="Bonos:+"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaBono4Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.1"
+                android:text="600"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaBono4Concepto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="conceptoDeBonos"
+                android:textColor="@color/colorNegro"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="------------------------"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Total:$"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaTotalNomina"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="300"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="********Descuentos**********"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CajaAhorro: -"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuentoCajaAhorro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="150"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Adelantos: -"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuentoAdelantos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="30"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- DESCUENTO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Descuento1: -"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento1Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="122"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Adeudo Restante:"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaConcepto1Restante"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="0.3"
+                android:text="3"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento1Concepto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.2"
+                android:text="Ropa, pantalon y blusa"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- DESCUENTO -->
+
+
+
+        <!-- DESCUENTO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Descuento2: -"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento2Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="122"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Adeudo Restante:"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaConcepto2Restante"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="0.3"
+                android:text="3"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento2Concepto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.2"
+                android:text="Ropa, pantalon y blusa"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- DESCUENTO -->
+
+        <!-- DESCUENTO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Descuento3: -"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento3Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="122"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AdeudoRestante:"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaConcepto3Restante"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="0.3"
+                android:text="3"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento3Concepto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.2"
+                android:text="Ropa, pantalon y blusa"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- DESCUENTO -->
+
+
+        <!-- DESCUENTO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Descuento4: -"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento4Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="122"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AdeudoRestante:"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaConcepto4Restante"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="0.3"
+                android:text="3"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento4Concepto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.2"
+                android:text="Ropa, pantalon y blusa"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- DESCUENTO -->
+
+
+        <!-- DESCUENTO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Descuento5: -"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento5Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="122"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AdeudoRestante:"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaConcepto5Restante"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="0.3"
+                android:text="3"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento5Concepto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.2"
+                android:text="Ropa, pantalon y blusa"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- DESCUENTO -->
+
+
+
+        <!-- DESCUENTO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Descuento6: -"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento6Importe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="122"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AdeudoRestante:"
+                android:textAlignment="textEnd"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaConcepto6Restante"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="0.3"
+                android:text="3"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaDescuento6Concepto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.2"
+                android:text="Ropa, pantalon y blusa"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- DESCUENTO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="POR COBRAR:$"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaPorCobrarLibre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="5920"
+                android:textColor="@color/colorAccent"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+
+        <!--**************CAJA AHORRO**********-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="*****Caja de Ahorro*****"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Anterior:"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaCajaAhorroDisponible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="1000"
+                android:textColor="@color/colorNegro"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Aumento:+"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaCajaAhorroAumento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="1000"
+                android:textColor="@color/colorNegro"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <!-- 3 conceptos-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="Retiro:-"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaCajaAhorroRetiro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1.3"
+                android:text="600"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaCajaAhorroRetiroConcepto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="conceptoDeAhorro"
+                android:textColor="@color/colorNegro"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <!-- Dos Conceptos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Disponible:"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/FragmentFinalNominaCajaAhorroNuevoDisponible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:text="1000"
+                android:textColor="@color/colorNegro"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/numeroFragmentDiaNominaET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="numero"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/finalNominaFirmarB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Imprimir" />
+
+
+    </LinearLayout>
+
+</ScrollView>

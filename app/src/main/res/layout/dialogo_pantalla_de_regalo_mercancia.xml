@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regalar mercancia"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        />
+
+
+    <TextView
+        android:id="@+id/DialogoPantallaDeRegaloMensajeUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu cliente tiene un adeudo pendiente que no liquido no podemos cambiar sus puntos hasta que su adeudo quede en 0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/DialogoPantallaDeRegaloMensajeDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="los puntos de tu cliente estan en negativo "
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piezas a regalar:"
+            android:textAlignment="viewEnd"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/DialogoPantallaDeRegaloDescripcionPiezas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-159"
+            android:textAlignment="center"
+            android:textColor="@color/colorNegro"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/DialogoPantallaDeRegaloLayoutCalculoPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+
+
+        ></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Puntos Anteriores:"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DialogoPantallaDeRegaloPuntosDisponiblesDesdeAdministracion"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="400"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Puntos Ganados:"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DialogoPantallaDeRegaloPuntosGanadosPorVenta"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="200"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Puntos Contado:"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DialogoPantallaDeRegaloPuntosGanadosPorVentaContado"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="200"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Puntos disponibles:"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/DialogoPantallaDeRegaloPuntosTotales"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="350"
+            android:textStyle="bold"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Puntos ya canjeados:"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/DialogoPantallaDeRegaloPuntosYaCanjeados"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="149"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Puntos por canjear:"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/DialogoPantallaDeRegaloPuntosPorCanjear"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="159"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Puntos restantes"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/DialogoPantallaDeRegaloPuntosRestantes"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="91"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/DialogoPantallaDeRegaloBoton1"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Regalo"
+            android:background="@drawable/border_pink"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/DialogoPantallaDeRegaloBoton2"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Contado"
+            android:background="@drawable/border_green"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Button
+            android:id="@+id/DialogoPantallaDeRegaloBoton3"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:background="@drawable/border_gris"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

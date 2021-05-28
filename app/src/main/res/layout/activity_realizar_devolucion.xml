@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.greenmouse.kaliope.RealizarDevolucion"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="Devolucion"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ec268f"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="Tu cliente tiene mercancia acargo por favor registra su devolucion"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/RealizarDevolucionNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="nombre"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorNegro"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/RealizarDevolucionSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Siguiente->"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="5sp"
+        android:paddingEnd="5sp"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codigo:"
+            />
+
+        <EditText
+            android:id="@+id/RealizarDevolucionCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="number"
+            android:nextFocusDown="@id/RealizarDevolucionCantidad"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            />
+
+        <EditText
+            android:id="@+id/RealizarDevolucionCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="number"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Piezas Capturadas:"
+        />
+
+        <TextView
+            android:id="@+id/RealizarDevolucionPiezasCapturadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@color/colorNegro"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Importe:"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/RealizarDevolucionImporteCapturado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="@color/colorNegro"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        >
+        <ListView
+            android:id="@+id/RealizarDevolucionLista"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            ></ListView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:text="Mercancia acargo:"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/RealizarDevolucionMercanciaAcargo"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:text="139 - 4 149 - 1 159 - 5 169 - 3 399 - 4 499 - 1 "
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/RealizarDevolucionImporteAcargo"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:text="$"
+                android:textSize="21dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

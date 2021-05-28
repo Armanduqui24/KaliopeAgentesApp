@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    >
+
+    <TextView
+        android:id="@+id/FirstText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="id"
+        android:layout_weight="0.3"
+        android:textSize="14sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="0dp"
+        android:gravity="center_vertical"
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/SecondText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="First"
+        android:layout_weight="1.5"
+        android:textSize="14sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/colorNegro"
+        android:gravity="center_vertical"
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ThirdText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="SecondText"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/colorNegro"
+        android:gravity="center_vertical"
+
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/FourthText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="ThirdText"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/colorNegro"
+        android:gravity="center_vertical"
+
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/FifthText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="FourthText"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/colorNegro"
+        android:gravity="center_vertical"
+
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/SixthText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="FifthText"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/colorNegro"
+        android:gravity="center_vertical"
+        android:textAlignment="center">
+    </TextView>
+</LinearLayout>

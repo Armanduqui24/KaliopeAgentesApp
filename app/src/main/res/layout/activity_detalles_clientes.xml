@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    tools:context=".DetallesClientes">
+
+    <!--El escrollView solo permite un solo hijo por lo tanto creamos un linear layout donde entraran todos los demas hijos-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layoutParent"
+            android:background="@color/colorVisitar"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/cuentaTVdetallesClientes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="2040"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/nombreTVdetallesClientes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Maria minerva SALASAR"
+                            android:textAllCaps="true"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Estado:"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Prioridad:"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5sp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/estadoTVdetallesClientes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Activo"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:layout_marginStart="5dp"
+                            android:textSize="17dp"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/prioridadDeVisitaTVdetallesClientes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="ALTA!!!"
+                            android:layout_marginEnd="5dp"
+                            android:textAllCaps="true"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Dias de atraso:"/>
+
+                        <TextView
+                            android:layout_marginStart="50dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+
+                            android:text="Acargo:"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:textAlignment="center"
+                            android:text="Adeudo:"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/diasEnAtrasoTVdetallesClientes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="25sp"
+                            android:textColor="#000000"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/acargoTVdetallesClientes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="1099"
+                            android:textSize="25sp"
+                            android:textColor="#000000"/>
+
+
+                        <TextView
+                            android:id="@+id/adeudoTVdetallesClientes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textSize="25sp"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="Dias de credito:"
+                            android:textSize="16sp"
+                            />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="Grado:"
+                            android:textSize="16sp"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="Limite Credito:"
+                            android:textSize="16sp"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/diasCreditoTVdetallesClientes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="28"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            />
+
+
+
+
+                        <TextView
+                            android:id="@+id/gradoTVdetallesClientes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Vendedora"
+                            android:textSize="14sp"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/creditoTVdetallesClientes"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="$1500"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20sp"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/telefono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Telefono:"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18dp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/telefonoTVdc"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:text="712 115 76 86 712 115 76 86"
+                            android:layout_marginTop="0dp"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Zona:"/>
+
+                        <TextView
+                            android:id="@+id/nombrezonaTVdetallesClientes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Polotitlan"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="12sp"
+                            android:textColor="#000000"
+                            />
+
+                    </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coordenadas:"
+                        android:textSize="18sp"
+                        />
+
+
+
+
+                    <TextView
+                        android:id="@+id/coordenadasTVdc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="19.1000,-100.9987"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        />
+
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/detallesClientesVerMapaImageButton"
+                        android:text="Ver en mapa"
+                        android:src="@drawable/icono_mapa18"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20sp"
+                        android:paddingBottom="5sp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/mensajeAmostrarVisitaTVdc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="urge visitar a esta clienta"
+                            android:textColor="#000000"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <!--Aqui termina la parte del "Tarjeton del cliente" -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Inicia la parte del historial" -->
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="MERCANCIA ACARGO:"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/mercanciaTVdc"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:text="139 - 4 149 - 1 159 - 5 169 - 3 399 - 4 499 - 1 "
+                        android:textSize="18dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="---------------------------"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:gravity="top"
+                        android:textColor="#000000"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:text="Total acargo:"
+                            android:textSize="15sp"/>
+
+
+                        <TextView
+                            android:id="@+id/aCargoTVdc"
+                            android:layout_width="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:text="$1550"
+                            android:textSize="25sp"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vence el:"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/vencimientoTVdc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19-06-2018"
+                            android:textSize="20sp"
+                            android:textColor="#000000"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="40sp"
+                        >
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="ADEUDO:"
+                            android:textSize="20sp"/>
+
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:text="PUNTOS DISP:"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                    <TextView
+                        android:id="@+id/adeudoTVdc"
+                        android:layout_width="0sp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"
+                        android:text="$250"
+                        android:textSize="25dp"
+                        android:textColor="@color/colorLio"
+                        />
+
+
+
+                        <TextView
+                            android:id="@+id/puntosTVdc"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="300"
+                            android:textSize="25dp"
+                            android:textColor="#000000"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:layout_marginTop="40sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HISTORIAL DE PAGOS:"/>
+
+
+
+
+                        <TextView
+                            android:id="@+id/historialTVdc"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10-07-2018 - $0 19-07-2018 - $200 25-07-2018 - $1550"
+                            android:textSize="18sp"
+                            android:textColor="#000000"/>
+
+
+
+
+                    <TextView
+                        android:layout_marginTop="100dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPORTE DE LA VISITA ANTERIOR:"/>
+
+                        <TextView
+                            android:id="@+id/reporteTVdc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="la clienta no se encontro en su DOMICILIO"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INDICACIONES DE ADMINISTRACION:"/>
+
+                        <TextView
+                            android:id="@+id/indicacionesTVdc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" MUY BUEN CLIENTA SE DIO DE BAJA PORQUE SE ENBARAZO, REACTIVAR"
+                            android:textSize="18sp"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"/>
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/indicacionesTVdc"
+                            android:layout_marginTop="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="Mantenga presionado para cambiar el Estado de visita:"
+
+                            />
+
+                    <TextView
+                        android:id="@+id/estadoVisitaTVdc"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/colorVisitado"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+
+

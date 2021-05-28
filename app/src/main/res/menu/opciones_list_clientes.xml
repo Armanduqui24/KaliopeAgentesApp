@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+
+    >
+
+
+
+    <item
+        android:title="MOVER A VISITADO                      "
+        android:id="@+id/visitadoM"/>
+    <item
+        android:title="MOVER A REPASO"
+        android:id="@+id/repasarM"/>
+    <item
+        android:title="MOVER A VISITAR"
+        android:id="@+id/visitarM"/>
+
+
+</menu>

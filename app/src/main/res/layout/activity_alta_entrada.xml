@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.greenmouse.kaliope.AltaEntradaActivity">
+
+    <TextView
+        android:id="@+id/txtTituloAltaMovimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:text="Devolucion"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ec268f"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnTermineEntradas"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mi_boton"
+        android:drawableLeft="@drawable/icono_termine"
+        android:text="Terminé"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/lblDevoluciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTituloAltaMovimiento"
+        android:layout_centerHorizontal="true"
+        android:text="Es momento de capturar la devolucion de tu cliente"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lblCodigoEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblDevoluciones"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="11dp"
+        android:text="Código:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtCodigoProducto"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblCodigoEntrada"
+        android:layout_toEndOf="@+id/lblCodigoEntrada"
+        android:ems="10"
+        android:inputType="number"
+        android:nextFocusDown="@+id/txtCantidadProductos" />
+
+    <TextView
+        android:id="@+id/lblCantidadEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblCodigoEntrada"
+        android:layout_toEndOf="@+id/txtCodigoProducto"
+        android:paddingBottom="11dp"
+        android:text="Cantidad:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtCantidadProductos"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtCodigoProducto"
+        android:layout_toEndOf="@+id/lblCantidadEntrada"
+        android:ems="10"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/btnAgregarEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtCantidadProductos"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/selector"
+        android:src="@drawable/icono_agregar" />
+
+    <ListView
+        android:id="@+id/listViewEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_above="@+id/lblTotalPiezasEntrada"
+        android:layout_alignEnd="@+id/btnAgregarEntrada"
+        android:layout_below="@+id/lblCodigoEntrada"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/lblTotalPiezasEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTermineEntradas"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/txtCodigoProducto"
+        android:text="Piezas:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/rosa_klp" />
+
+    <TextView
+        android:id="@+id/txtPiezasTotalesEntrada"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblTotalPiezasEntrada"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/lblTotalPiezasEntrada"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblTotalEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtPiezasTotalesEntrada"
+        android:layout_toStartOf="@+id/txtImporteTotalEntrada"
+        android:text="Total:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/rosa_klp" />
+
+    <TextView
+        android:id="@+id/txtImporteTotalEntrada"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblTotalEntrada"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="number"
+        android:text="MMCDP"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+</RelativeLayout>

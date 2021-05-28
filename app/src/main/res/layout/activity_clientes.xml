@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Clientes">
+
+    <Button
+        android:id="@+id/visitarB"
+        android:layout_marginStart="1dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="VISITAR"
+        android:textSize="11sp"
+        android:background="@color/colorVisitar"/>
+
+    <Button
+        android:id="@+id/repasosB"
+        android:layout_alignBaseline="@id/visitarB"
+        android:layout_toEndOf="@id/visitarB"
+        android:layout_marginStart="5dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="REPASOS"
+        android:textSize="11sp"
+        android:background="@color/colorRepaso"/>
+
+    <Button
+        android:id="@+id/visitadosB"
+        android:layout_alignBaseline="@id/repasosB"
+        android:layout_toEndOf="@id/repasosB"
+        android:layout_marginStart="5dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="VISITADOS"
+        android:textSize="11sp"
+        android:background="@color/colorVisitado"/>
+
+    <Button
+        android:id="@+id/noVisitarB"
+        android:layout_alignBaseline="@id/repasosB"
+        android:layout_toEndOf="@id/visitadosB"
+        android:layout_marginStart="5dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="NO VISITAR"
+        android:textSize="11sp"
+        android:background="@color/colorNoVisitar"/>
+
+
+    <Button
+        android:id="@+id/todosB"
+        android:layout_alignBaseline="@id/visitadosB"
+        android:layout_toEndOf="@id/noVisitarB"
+        android:layout_marginStart="5dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="TODOS"
+        android:textSize="11sp"
+        android:background="@color/colorTodos"/>
+
+
+
+    <ListView
+        android:id="@+id/listaClientes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/visitarB"
+        android:paddingTop="10dp"
+        android:background="#EEEEEE"
+        >
+
+    </ListView>
+
+
+
+
+
+
+</RelativeLayout>
+
+

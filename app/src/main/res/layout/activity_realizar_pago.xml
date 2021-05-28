@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.greenmouse.kaliope.RealizarPago"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40sp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Realizar Pago"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ec268f"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Por favor captura los pagos que realiza tu cliente"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RealizarPagosNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="nombre"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorNegro"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="viewEnd"
+
+                />
+
+            <TextView
+                android:id="@+id/RealizarPagosVentaGenerada"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$900"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="35sp" />
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Venta generada"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="40sp"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="viewEnd"
+                />
+
+            <TextView
+                android:id="@+id/RealizarPagosAdeudoPendiente"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$1530"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="35sp" />
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Adeudo Pendiente"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:orientation="horizontal"
+            android:gravity="center|top"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="35sp"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="viewEnd"
+                />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="4sp"
+                android:text=""
+                android:background="@drawable/border_luisda"
+                android:textSize="30sp"
+                />
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textSize="38sp"
+                android:textColor="@color/colorNegro"
+                android:textAlignment="viewEnd"
+                />
+
+            <TextView
+                android:id="@+id/RealizarPagosTotalPorPagar"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$890"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="50sp" />
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Total por Pagar"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Pago:"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorNegro"
+
+                />
+
+            <EditText
+                android:id="@+id/RealizarPagosCapturaPago"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="5"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:inputType="number" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Nuevo saldo:"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorNegro"
+                />
+
+
+            <TextView
+                android:id="@+id/RealizarPagosNuevoSaldoPendiente"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:layout_marginTop="60sp"
+            >
+
+            <TextView
+                android:id="@+id/RealizarPagosMensajeParaContinuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Tu cliente no ha realizado el pago minimo de: 690 \n necesario para dejar mercancia, \n -No po"
+                android:textAlignment="center"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/RealizarPagosSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="-Ya le avise al cliente"
+                android:textColor="@color/colorNegro"
+                android:textStyle="italic"
+                android:layout_marginTop="15sp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

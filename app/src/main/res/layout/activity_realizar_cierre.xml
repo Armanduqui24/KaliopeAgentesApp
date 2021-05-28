@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.greenmouse.kaliope.RealizarCierre"
+    android:orientation="vertical"
+    android:paddingStart="2sp"
+    android:paddingEnd="2sp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Resultado de Venta"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ec268f"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Calculamos el total de venta de tu cliente"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RealizarCierreNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="nombre"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorNegro"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="viewEnd"
+
+                />
+
+            <TextView
+                android:id="@+id/RealizarCierreAcargo"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$1530"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Total acargo"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:paddingEnd="5sp"
+                android:paddingStart="5sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="40sp"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="viewEnd"
+                />
+
+            <TextView
+                android:id="@+id/RealizarCierreImporteDevuelto"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$1530"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Importe devuelto"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:paddingEnd="5sp"
+                android:paddingStart="5sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <!--Haremos mediante codigo que este linear layout del pago extra se oculte o se muestre dependiendo de si hiso o no pago extra para ganar mas puntos-->
+
+        <LinearLayout
+            android:id="@+id/RealizarCierreLayoutPagoExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+
+
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="25sp"
+                android:textColor="@color/colorNegro"
+                android:textAlignment="viewEnd"
+                />
+
+
+
+            <TextView
+                android:id="@+id/RealizarCierreCargoAdicionalGanarPuntos"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$15"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pago extra para ganar mas puntos"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:paddingEnd="5sp"
+                    android:paddingStart="5sp"
+                    />
+
+                <Button
+                    android:id="@+id/RealizarCierreEliminarPagoExtra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20sp"
+                    android:textSize="10sp"
+                    android:paddingEnd="5sp"
+                    android:paddingStart="5sp"
+                    android:text="Eliminar pago extra"
+                    android:background="@drawable/mi_boton_luisda"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:orientation="horizontal"
+            android:gravity="center|top"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="35sp"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="viewEnd"
+                />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="4sp"
+                android:text=""
+                android:background="@drawable/border_luisda"
+                android:textSize="30sp"
+                />
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textSize="38sp"
+                android:textColor="@color/colorNegro"
+                android:textAlignment="viewEnd"
+                />
+
+            <TextView
+                android:id="@+id/RealizarCierreVentaGenerada"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="$890"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorNegro"
+                android:textSize="40sp" />
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Venta generada"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:paddingEnd="5sp"
+                android:paddingStart="5sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Puntos Ganados:"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/RealizarCierrePuntosGanados"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="$890"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+
+
+            <!--Estos se ocultaran mediante codigo cuando la diferencia para ganar mas puntos sea muy grande, y se mostraran cuando la diferencia sea alcanzable-->
+            <TextView
+                android:id="@+id/RealizarCierreDescripcionGanarMasPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A tu cliente le faltan $10 para ganar otros 50 puntos\nDile que podria hacer lo siguiente:"
+                android:textAlignment="center"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp" />
+
+
+
+            <Button
+                android:id="@+id/RealizarCierreTomarUnaPiezaMasDevolucion"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:textSize="15sp"
+                android:text="-Tomar una pieza mas de su devolucion"
+                android:textColor="@color/colorNegro"
+                android:textStyle="italic"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/mi_boton_luisda"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:layout_gravity="center_horizontal"
+
+                />
+
+
+            <Button
+                android:id="@+id/RealizarCierreGenerarPagoAdicional"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:textSize="15sp"
+                android:text="-Generar un pago adicional por "
+                android:textColor="@color/colorNegro"
+                android:textStyle="italic"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/mi_boton_luisda"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+
+            <Button
+                android:id="@+id/RealizarCierreSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="-No hacer nada y continuar a pagos"
+                android:textColor="@color/colorNegro"
+                android:textStyle="italic"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="20sp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>

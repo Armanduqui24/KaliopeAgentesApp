@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumen de Pagos"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tu cliente genero una venta de:"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$500"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tenia un saldo pendiente de:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$500"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Entrega un pago total de:"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$500"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Por lo tanto a su venta abono:"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$500"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="Gracias a esto tu cliente gano:"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100 puntos"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"/>
+
+
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="mensaje"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"/>
+
+
+
+
+
+</LinearLayout>

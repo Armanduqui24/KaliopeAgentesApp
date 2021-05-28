@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="1dp"
+    tools:context="mx.greenmouse.kaliope.MenuPrincipalActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Bienvenido"
+        android:id="@+id/txtTitulo"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#ec268f"
+        android:textStyle="bold"
+        android:layout_below="@+id/menuPrincipalEstadoDeSincronizacion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btMovimientos"
+        android:layout_marginTop="55dp"
+        android:adjustViewBounds="false"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/boton_movimientos"
+        android:background="@drawable/selector" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movimientos"
+        android:textSize="18dp"
+        android:id="@+id/F"
+        android:layout_below="@+id/btMovimientos"
+        android:layout_alignEnd="@+id/btMovimientos"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btInventario"
+        android:layout_alignTop="@+id/btMovimientos"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/boton_inventario"
+        android:background="@drawable/selector" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Inventario"
+        android:textSize="18dp"
+        android:id="@+id/txInventario"
+        android:textAlignment="center"
+        android:layout_below="@+id/btInventario"
+        android:layout_alignStart="@+id/btInventario"
+        android:layout_alignEnd="@+id/btInventario" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btBitacora"
+        android:layout_below="@+id/txInventario"
+        android:layout_alignStart="@+id/txInventario"
+        android:layout_alignEnd="@+id/txInventario"
+        android:src="@drawable/boton_bitacora"
+        android:background="@drawable/selector" />
+    android:background="@drawable/boton_codigos" />
+
+    <TextView
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/menuPrincipalEstadoConexiontv"
+    android:textAlignment="center"
+    android:text="intentando"
+    android:textColor="@color/colorNegro"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:textSize="14sp"
+    />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuPrincipalEstadoDeSincronizacion"
+        android:textAlignment="viewStart"
+        android:paddingStart="5sp"
+        android:text="intentando"
+        android:textColor="@color/colorNegro"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/menuPrincipalEstadoConexiontv"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mapa"
+        android:textSize="18dp"
+        android:id="@+id/txCodigos"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/txBitacora"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btCodigos" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btCodigos"
+        android:layout_above="@+id/txCodigos"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/mapa"
+        android:background="@drawable/selector" />
+    android:layout_alignParentEnd="true"
+    android:background="@drawable/boton_bitacora" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Consultar Nomina"
+        android:textSize="18dp"
+        android:id="@+id/txBitacora"
+        android:textAlignment="center"
+        android:layout_below="@+id/btBitacora"
+        android:layout_alignStart="@+id/btBitacora"
+        android:layout_alignEnd="@+id/btBitacora" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="dato de usuario"
+        android:id="@+id/txSesion"
+        android:textSize="20sp"
+        android:layout_above="@+id/btInventario"
+        android:layout_centerHorizontal="true"
+        android:textColor="#31338e"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:id="@+id/txInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info"
+        android:textSize="20dp"
+        android:layout_above="@+id/btInventario"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="10dp"         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="®Kaliope México 2018"
+        android:id="@+id/txEstaus"
+        android:layout_gravity="bottom"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/Datos"
+        android:layout_below="@+id/txBitacora"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/txBitacora"
+        android:layout_alignEnd="@+id/txInventario"
+        android:text="Informacion"
+        android:background="@color/colorAccent" />
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/goToMapButton"
+        android:layout_below="@+id/txBitacora"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/txCodigos"
+        android:layout_alignEnd="@+id/txCodigos"
+        android:text="Mapa"
+        android:background="@color/colorAccent"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

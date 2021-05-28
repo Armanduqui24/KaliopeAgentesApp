@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    tools:context=".MovimientoAutomaticoAlmacen">
+
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movimiento Automatico de Almacen"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView103"
+        android:layout_centerHorizontal="true"
+        android:text="Captura el codigo QR del Sistema"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/textView114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView105"
+        android:layout_centerHorizontal="true"
+        android:text="info"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        />
+
+    <ImageButton
+        android:id="@+id/Button104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView105"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/escanearcodigopeque"
+        android:text="ESCANEAR CODIGO"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button104"
+        android:src="@drawable/escanearcodigopeque"
+        android:textColor="@color/colorNegro"
+        android:text="ESCANEAR CODIGO"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageButton
+        android:id="@+id/Button105"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBottom="@+id/Button104"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="false"
+        android:src="@drawable/continuarboton"
+        android:background="@drawable/selector" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button104"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:text="Piezas Totales Procesadas:"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/textView107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView106"
+        android:layout_toEndOf="@+id/textView106"
+        android:layout_marginStart="15dp"
+        android:text="000"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        />
+
+
+
+
+
+
+
+
+    <TextView
+    android:id="@+id/textView108"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView106"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="10dp"
+    android:text="Importe total del Movimiento: $"
+    android:textSize="18sp"
+    android:textColor="#000000"
+    android:textAlignment="center"
+    />
+
+    <TextView
+        android:id="@+id/textView109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView108"
+        android:layout_toEndOf="@+id/textView108"
+        android:text="000000"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView110"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView108"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Tipo de movimiento:"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView110"
+        android:layout_toEndOf="@+id/textView110"
+        android:layout_marginStart="5dp"
+        android:text="TipMov"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView111"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Datos obtenidos del QR para comparar"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        />
+
+
+    <TextView
+        android:id="@+id/textView113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView112"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Detalles del movimiento"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        />
+
+     <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView113"
+        android:background="@drawable/border"
+        >
+
+
+    </ListView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

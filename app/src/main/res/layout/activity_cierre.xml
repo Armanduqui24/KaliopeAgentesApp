@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:paddingBottom="5dp"
+
+tools:context=".Cierre">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Venta del Cliente"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView7"
+        android:text="Ahora sabemos la venta de tu cliente, tomando en cuenta la mercancia acargo y restando su devolución" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:text="Cliente:" />
+
+    <TextView
+        android:id="@+id/clienteCierreTV"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView14"
+        android:layout_marginEnd="14dp"
+        android:text="Maria Carmen Gonzalez Martinez"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clienteCierreTV"
+        android:layout_alignParentStart="true"
+        android:text="Fecha de Vencimiento:"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView53"
+        android:layout_alignStart="@+id/textView53"
+        android:layout_alignEnd="@+id/textView53"
+        android:text="19-01-2019"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clienteCierreTV"
+        android:layout_alignParentEnd="true"
+        android:text="-       Fecha Actual:      -"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView53"
+        android:layout_alignStart="@+id/textView55"
+        android:layout_alignEnd="@+id/textView55"
+        android:text="19-01-2019"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:text="1250"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_toStartOf="@+id/textView19"
+        android:text="$"
+        android:textSize="23sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19"
+        android:layout_marginEnd="30dp"
+        android:textColor="#000000"
+        android:text="Mercancia Acargo" />
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView19"
+        android:text="750"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="11dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_toStartOf="@+id/textView19"
+        android:text="$"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toEndOf="@+id/textView22"
+        android:text="Devolucion"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView22"
+        android:layout_alignStart="@+id/textView25"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="45sp" />
+
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView22"
+        android:layout_marginTop="-25dp"
+        android:text="_________"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView25"
+        android:text="500"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp" />
+
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView26"
+        android:layout_toEndOf="@+id/textView26"
+        android:layout_marginEnd="37dp"
+        android:text="Venta Generada"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_toStartOf="@+id/textView19"
+        android:text="$"
+        android:textColor="@color/colorPrimary"
+        android:textSize="33sp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView24"
+        android:layout_alignTop="@+id/textView26"
+        android:text="="
+        android:textColor="@color/colorPrimary"
+        android:textSize="33sp" />
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnTermineCierre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mi_boton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Siguiente-->"
+        android:textSize="12sp"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="mensaje error"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>

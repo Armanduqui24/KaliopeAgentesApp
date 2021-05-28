@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.greenmouse.kaliope.VistaMovimientosClientes"
+    android:orientation="vertical"
+    >
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Resumen de Movimientos"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ec268f"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/border_green"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Usuario:"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/VistaMovimientosClientesUsuario"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:text="Ivan"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Nombre:"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/VistaMovimientosClientesNombreCompleto"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:text="Crhistian ivan Ramires Padilla"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ruta:"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/VistaMovimientosClientesRuta"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:text="Huaniqueo * Chilchota"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cobro Final:"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/VistaMovimientosClientesCobroFinal"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:text="5980"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/VistaMovimientosClientesBotonImprimir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Imprimir"
+            android:textSize="12sp"
+            />
+
+
+        <ListView
+            android:id="@+id/VistaMovimientosClientesLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            >
+
+        </ListView>
+
+
+
+
+
+
+
+</LinearLayout>

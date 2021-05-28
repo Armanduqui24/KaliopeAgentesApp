@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kaliope</string>
+    <string name="firmavozmodificada">Se modificaron los movimientos se requiere una nueva firma de voz</string>
+
+
+    <string name="CodigoError">El codigo capturado es incorrecto</string>
+
+
+    <!-- Alert Dialog confirmacion movimiento automatico-->
+    <string name="titulo">Termina Movimiento</string>
+    <string name="instrucciones">Para guardar el movimiento es necesario que ingrese este codigo
+    en el Dispositivo de Almacen:</string>
+    <string name="instrucciones2">Ahora capture el codigo que le entrego el Almacen:</string>
+    <string name="ethint">Codigo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
