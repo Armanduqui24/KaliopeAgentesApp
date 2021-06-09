@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Informacion1Activity">
+    tools:context=".Informacion1Activity"
+    android:padding="5dp"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,6 +27,7 @@
         android:text="4772-1430-0714-4799"
         android:textColor="#000000"
         android:textSize="34dp"
+        android:layout_gravity="center_horizontal"
         />
 
     <TextView
@@ -36,6 +39,50 @@
         android:text="Dale este numero de tarjeta a tu cliente recuerdale que guarde su comprobante una vez que realice el depocito."
         android:textSize="20dp"
 
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:text="Numero de cuenta ventanilla BBVA (Bancomer):"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="0103377695"
+        android:textColor="#000000"
+        android:textSize="34dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:text="Cuenta CLABE transferencias interbancarias:"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="012426001033776956"
+        android:textColor="#000000"
+        android:textSize="34dp"
+        android:layout_gravity="center_horizontal"
         />
 
     <Button
@@ -54,10 +101,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@color/colorPrimary"
-        android:textColor="@color/colorBlanco"
         android:text="Imprimir"
-        />
-
+        android:textColor="@color/colorBlanco" />
 
 
 </LinearLayout>

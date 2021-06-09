@@ -218,15 +218,39 @@ public class Informacion1Activity extends AppCompatActivity implements View.OnCl
                 printTitle( "4772-1430-0714-4799" + "\n");
                 btoutputstream_bit.write(PrinterCommands.SELECT_FONT_A);
 
+
+                printNewLine();
+                printNewLine();
+                //btoutputstream_bit.write(PrinterCommands.ESC_ALIGN_LEFT);
+                btoutputstream_bit.write(PrinterCommands.ESC_ALIGN_CENTER);
+                printText("Numero cuenta BBVA (Bancomer):" + "\n");
+                btoutputstream_bit.write(PrinterCommands.SELECT_FONT_A);
+                printNewLine();
+                printTitle( "0103377695" + "\n");
+                btoutputstream_bit.write(PrinterCommands.SELECT_FONT_A);
+
+                printNewLine();
+                printNewLine();
+                //btoutputstream_bit.write(PrinterCommands.ESC_ALIGN_LEFT);
+                btoutputstream_bit.write(PrinterCommands.ESC_ALIGN_CENTER);
+                printText("Cuenta CLABE:" + "\n");
+                btoutputstream_bit.write(PrinterCommands.SELECT_FONT_A);
+                printNewLine();
+                printTitle( "012426001033776956" + "\n");
+                btoutputstream_bit.write(PrinterCommands.SELECT_FONT_A);
+
+
                 printNewLine();
                 printNewLine();
                 printNewLine();
                 //btoutputstream_bit.write(PrinterCommands.ESC_SETTING_BOLD);
                 printText( "Estimado cliente con este numero\n" +
-                        "de tarjeta podra hacer\n" +
+                        "de tarjeta y cuenta, podra hacer\n" +
                         "depocitos en cualquier OXXO\n" +
                         "o directo en ventanilla\n" +
-                        "BANCOMER." + "\n\n" +
+                        "BBVA (BANCOMER).\n\n" +
+                        "Con la CLABE podra hacer\n" +
+                        "transferencias interbancarias\n\n"+
                         "Una vez hecho el depocito\n" +
                         "guarde el comprobate para\n" +
                         "entregarcelo a su agente\n" +

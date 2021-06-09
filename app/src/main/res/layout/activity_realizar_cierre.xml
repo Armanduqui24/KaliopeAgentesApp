@@ -349,6 +349,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="center_vertical"
+                android:visibility="gone"
                 >
 
                 <TextView
@@ -405,7 +406,7 @@
                 android:paddingEnd="4dp"
                 android:paddingStart="4dp"
                 android:layout_gravity="center_horizontal"
-
+                android:visibility="gone"
                 />
 
 
@@ -422,6 +423,7 @@
                 android:paddingEnd="4dp"
                 android:paddingStart="4dp"
                 android:layout_gravity="center_horizontal"
+                android:visibility="gone"
                 />
 
 

@@ -466,6 +466,7 @@ public class  MainActivity extends AppCompatActivity implements View.OnClickList
                     Log.d("Informacion",String.valueOf(informacion.getString("id")));
                     //Log.d("zona",zona.getString("zona") + zona.getString("zonificacion"));
                     Log.d("Clientes",String.valueOf(clientes.length()));
+                    Log.d("Clientes",clientes.toString());
 
                     Toast.makeText(MainActivity.this, informacion.getString("id"), Toast.LENGTH_LONG).show();
 

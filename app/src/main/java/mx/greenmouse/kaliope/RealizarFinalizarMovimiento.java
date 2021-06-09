@@ -1228,7 +1228,7 @@ public class RealizarFinalizarMovimiento extends AppCompatActivity {
                                 "Si presenta algun problema\n por favor reportelo \nal telefono:\n");
 
                 btoutputstream_bit.write(PrinterCommands.SELECT_FONT_D);
-                printText("712-115-76-86");
+                printText("712-159-07-29");
                 printNewLine();
                 printNewLine();
                 btoutputstream_bit.write(PrinterCommands.ESC_ALIGN_CENTER);
@@ -1506,7 +1506,7 @@ public class RealizarFinalizarMovimiento extends AppCompatActivity {
 
                 btoutputstream_bit.write(PrinterCommands.ESC_SETTING_BOLD);
                 btoutputstream_bit.write(PrinterCommands.SELECT_FONT_F);
-                printTitle("712-115-76-86");
+                printTitle("712-159-07-29");
 
                 printNewLine();
                 printNewLine();

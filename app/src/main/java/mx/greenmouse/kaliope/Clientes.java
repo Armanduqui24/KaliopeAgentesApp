@@ -984,15 +984,15 @@ public class Clientes extends AppCompatActivity {
                                 if (adeudo >= 999 && acargo < 200){
                                     //si tiene un adeudo pendiente de mas de 999 y no tiene mercancia acargo
                                     prioridadDeVisita = ATRASO_URGENTE;
-                                    mensajeAmostrar = "Tienes que pasar a visitarla es de MES y pero presenta un atraso grande de $" + adeudo +" con"+ diasVencimientoOFaltanteParaCierre + " dias de atraso\n\n\n " +
+                                    mensajeAmostrar = "Tienes que pasar a visitarla es de MES pero presenta un atraso grande de $" + adeudo +" con"+ diasVencimientoOFaltanteParaCierre + " dias de atraso\n\n\n " +
                                             "-Has lo posible por cobrar ese atraso ya que si la dejamos mas tiempo podriamos perderla como cliente\n\n" +
                                             "-Procura ser amable y brindarle una buena atencion ya que no estas tratando con un LIO\n\n" +
                                             "-Si termina de pagarte puede continuar trabajando con la empresa, solo motivala para cuidar que no vuelva a ocurrir";
                                 }else if (adeudo >= 300 && adeudo<999 && acargo> 500){
                                     //si tiene un adeudo mayor a 300 y tiene mercancia acargo
                                     prioridadDeVisita = ATRASO;
-                                    mensajeAmostrar = "Hoy no le toca cierre pero presenta un adeudo pendiente de $" + adeudo + " pasa a visitarla por su saldo pendiente\n\n\n" +
-                                            "-Tiene mercancia acargo preguntale que tal le esta llendo\n\n" +
+                                    mensajeAmostrar = "Presenta un adeudo pendiente de $" + adeudo + " pasa a visitarla por su saldo pendiente\n\n\n" +
+                                            "-Tiene mercancia acargo realiza el su devolucion y su cierre\n\n" +
                                             "-Es solo un pequeño atraso entonces manten una atencion amable ya que esta clienta continua trabajando\n\n" +
                                             "-Si llegas a cobrarle de manera inadecuada la clienta se podria molestar y dejar de vender\n\n" +
                                             "-Es muy importante mantener su historial limpio y su cuenta al corriente\n\n" +
@@ -1001,7 +1001,8 @@ public class Clientes extends AppCompatActivity {
                                 }else if (adeudo >=300 && adeudo<=999 && acargo <200){
                                     //si no tiene mercancia acargo pero un saldo pendiente mayor a 300
                                     prioridadDeVisita = ATRASO;
-                                    mensajeAmostrar = "Hoy no le toca cierre pero presenta un adeudo pendiente de $" + adeudo + " pasa a visitarla por su saldo pendiente\n\n\n" +
+                                    mensajeAmostrar = "Presenta un adeudo pendiente de $" + adeudo + " pasa a visitarla por su saldo pendiente\n\n\n" +
+                                            "-Tiene mercancia acargo realiza el su devolucion y su cierre\n\n" +
                                             "-Es solo un pequeño atraso entonces manten una atencion amable ya que esta clienta podra continuar trabajando\n\n" +
                                             "-Si llegas a cobrarle de manera inadecuada la clienta se podria molestar y dejar de vender con la empresa\n\n" +
                                             "-Es muy importante mantener su historial limpio y su cuenta al corriente\n\n" +
@@ -1013,10 +1014,11 @@ public class Clientes extends AppCompatActivity {
                                 // o deba mas de 999 pesos  sin mercnacia acargo
                                 //entonces no deberiamos de pasar a ver a esta clienta en esta quincena
 
-                                prioridadDeVisita = BAJO;
-                                mensajeAmostrar = "No pases a visitarla es de MES hoy no le toca cierre\n\n\n" +
-                                        "-Faltan " + diasVencimientoOFaltanteParaCierre + " dias para su visita Su cierre es hasta el " + fechaVence  + "\n\n"+
-                                        "-Aprovecha el tiempo para traer clientes nuevos";
+                                prioridadDeVisita = NORMAL;
+                                mensajeAmostrar = "Es cuenta de mes, recuerda que debemos pasar a recibir la devolucion de su venta\n\n\n" +
+                                        "-Si la clienta no ha vendido debes motivarla para que genere venta llegado el dia de su cierre\n\n" +
+                                        "-Si haces su cierre la clienta tendra hasta el " + fechaVence + " para terminar de pagar este cierre\n\n" +
+                                        "-Faltan " + diasVencimientoOFaltanteParaCierre + " dias para su siguiente visita Su cierre es hasta el " + fechaVence  + "\n\n";
 
 
 

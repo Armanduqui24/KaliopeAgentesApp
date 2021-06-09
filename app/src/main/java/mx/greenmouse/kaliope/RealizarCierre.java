@@ -99,6 +99,7 @@ public class RealizarCierre extends AppCompatActivity {
             }
         });
 
+        /*
         pagoAdicionalPuntosB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,6 +110,9 @@ public class RealizarCierre extends AppCompatActivity {
                 Toast.makeText(RealizarCierre.this, "Pago agregado", Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
 
         eliminarPagoExtraB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,6 +133,8 @@ public class RealizarCierre extends AppCompatActivity {
                 regresarTomarPiezaDevolucion();
             }
         });
+        */
+
 
     }
 
@@ -163,8 +169,8 @@ public class RealizarCierre extends AppCompatActivity {
             }
 
 
-            calcularPuntosGanados();
-
+            //calcularPuntosGanados();
+            calcularMensajeYcantidadParaGanarMasPuntos(0,0);
 
 
         }
@@ -334,7 +340,7 @@ public class RealizarCierre extends AppCompatActivity {
         }
 
 
-        puntosGanadosTV.setText(String.valueOf(puntosGanados));
+        //puntosGanadosTV.setText(String.valueOf(puntosGanados));
         calcularMensajeYcantidadParaGanarMasPuntos(ventaInverior,ventaSuperior);
 
 
@@ -353,17 +359,29 @@ public class RealizarCierre extends AppCompatActivity {
         Log.d("RealizarCierre10","inferior " + String.valueOf(ventainferior));
         Log.d("RealizarCierre10","Superior " + String.valueOf(ventaSuperior));
 
-        cantidadFaltanteParaSiguientesPuntos = ventaSuperior - ventaTotalGenerada;
+        //cantidadFaltanteParaSiguientesPuntos = ventaSuperior - ventaTotalGenerada;
 
         Log.d("RealizarCierre10","cantidadParaSiguietnesPuntos " + String.valueOf(cantidadFaltanteParaSiguientesPuntos));
         Log.d("RealizarCierre10","ventaTotalGenerada " + String.valueOf(ventaTotalGenerada));
 
+        String mensaje;
+        if(ventaTotalGenerada>=500) {
+
+            mensaje  = "Felicita a tu cliente por su venta de $"+ ventaTotalGenerada + "\n\n" +
+                    "Informale que:\n\n" +
+                    "ha obtenido una ganancia mucho mayor con el nuevo sistema sin puntos";
+            mensajeGanarMasPuntosET.setText(mensaje);
+            siguienteB.setText("Ya la felicite continuar a pagos->");
+        }else {
+            mensaje  = "Tu cliente ha vendido menos de $500 motivala para que eleve sus ventas";
+            mensajeGanarMasPuntosET.setText(mensaje);
+            siguienteB.setText("Ya la motive continuar a pagos->");
+        }
 
 
 
 
-
-
+        /*
         if (ventaTotalGenerada>=500){
 
             String mensaje;
@@ -413,6 +431,7 @@ public class RealizarCierre extends AppCompatActivity {
 
 
         }else{
+        */
 
             //(Si la venta generada es menor de 500 se podria ganar en lugar de 50 100 puntos
             //
@@ -420,6 +439,9 @@ public class RealizarCierre extends AppCompatActivity {
             // ganarce los 100 puntos habilitamos las opciones)
 
 
+
+
+/*
             if (cantidadFaltanteParaSiguientesPuntos <=80){
 
                 String mensaje  = "No ha gando puntos porque la venta ha sido menor que $500 \n\n" +
@@ -448,19 +470,19 @@ public class RealizarCierre extends AppCompatActivity {
 
             }else{
                 //si le faltan mas de 80 para ganar puntos quitamos las opciones
-                String mensaje  = "No ha gando puntos porque la venta ha sido menor que $500 \n\n" +
+                String mensaje  = "Motiva a tu clienta \n\n" +
                                     "-Motivala para que eleve sus ventas";
                 mensajeGanarMasPuntosET.setText(mensaje);
                 pagoAdicionalPuntosB.setVisibility(View.GONE);
                 regresarTomarPiezaDevolucionB.setVisibility(View.GONE);
                 siguienteB.setText("Ya la motive continuar a pagos->");
-            }
+            }*/
 
 
 
 
 
-        }
+
 
 
 

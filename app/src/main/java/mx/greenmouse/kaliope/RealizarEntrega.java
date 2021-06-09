@@ -1,7 +1,4 @@
-    +-9+
-            +.0
-            }
-            _..-permission_grouppackage mx.greenmouse.kaliope;
+package mx.greenmouse.kaliope;
 
 import android.content.ContentValues;
 import android.content.DialogInterface;
@@ -33,6 +30,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+
+import mx.greenmouse.kaliope.DataBaseHelper;
 
 public class RealizarEntrega extends AppCompatActivity {
 
