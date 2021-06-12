@@ -672,7 +672,7 @@ public class RealizarEntrega extends AppCompatActivity {
         regalosPiezasCapturadas = dataBaseHelper.entrega_mercancia_calcularPiezasEntregadas(numeroDeCuentaCliente,REGALO);
         regalosImporteCapturado = dataBaseHelper.entrega_mercancia_calcularImporteEntrega(numeroDeCuentaCliente,REGALO) + redondeoPositivoOnegativoDePuntosCanjeados;
         puntosRestantes = puntosTotalesConsultar - regalosImporteCapturado;
-        puntosGanadosVentaContado = dataBaseHelper.clientes_calcularPuntosGanadosVentaAlContado(numeroDeCuentaCliente);
+        //puntosGanadosVentaContado = dataBaseHelper.clientes_calcularPuntosGanadosVentaAlContado(numeroDeCuentaCliente);   //dejamos de dar puntos por ventas al contado
 
 
 
@@ -798,12 +798,13 @@ public class RealizarEntrega extends AppCompatActivity {
 
 
 
-        if (puntosGanadosVentaContado>0){
-            tvPuntosTotales.setTextColor(getResources().getColor(R.color.colorActivo));
-            tvPuntosTotales.startAnimation(animationLatido);
-            tvContadoPuntosGanados.setTextColor(getResources().getColor(R.color.colorActivo));
-            tvContadoPuntosGanados.startAnimation(animationLatido);
-            String mensaje = "Ha ganado " + puntosGanadosVentaContado + "puntos por esta venta de contado, se han sumado a sus puntos disponibles";
+        if(contadoPiezasCapturadas>0){      //cambiamso antes era contadopuntosganados, ahora es piezas porque suspendimos los puntos para que con que captrue 1 de contado aparesca el mensaje
+            //tvPuntosTotales.setTextColor(getResources().getColor(R.color.colorActivo));
+            //tvPuntosTotales.startAnimation(animationLatido);
+            //tvContadoPuntosGanados.setTextColor(getResources().getColor(R.color.colorActivo));
+            //tvContadoPuntosGanados.startAnimation(animationLatido);
+            //String mensaje = "Ha ganado " + puntosGanadosVentaContado + "puntos por esta venta de contado, se han sumado a sus puntos disponibles";
+            String mensaje = "Ha obtenido el mejor precio al pagar de contado, indicale que podra ganar mas si utiliza Inversion 1 2 o 3";
             tvMensajeAdvertenciaLayoutContado.setText(mensaje);
             tvMensajeAdvertenciaLayoutContado.setTextColor(getResources().getColor(R.color.colorActivo));
             tvMensajeAdvertenciaLayoutContado.setVisibility(View.VISIBLE);

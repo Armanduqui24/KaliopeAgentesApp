@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     //buildToolsVersion 27.0.3
     defaultConfig {
         //applicationId "mx.greenmouse.kaliope"
         applicationId "mx.kaliope.luisda"
         minSdkVersion 21
-        targetSdkVersion 28 //24
-        versionCode 20
-        versionName "7.0.1"
+        targetSdkVersion 29 //24
+        versionCode 22
+        versionName "7.2.1"
 
         /*
         * VERSION NAME 6.3
@@ -120,8 +120,17 @@ android {
         * las coordenadas se cortaban a 4 o 3 decimales, afectando la presicion en el mapa y las cuentas
         * se movian a otros lugares
         *
-        * 
         *
+        *
+        *
+        * 7.3 versionCOde21
+        * Cancelamos la entrega de puntos en el archivo realizarCierre
+        * modificamos los mensajes de prioridad en los clientes para que aparescan las cuentas de mes en Normal
+        * modificamos la pantalla informacion y agergamos numero de cuenta y CLABE
+        * 
+        *7.2.1 versionCode22
+        * Cancelamos la entrega de puntos en la parte de entrega de mercancia en contado que se me olvido
+        * jejejejej
         *
         *
 
