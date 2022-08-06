@@ -1,4 +1,4 @@
 # KaliopeAgentesApp
 This is the Android app available in Playstore. Moved from bitBucket
 
-## I just move this repository. I am still creating this readme file.
+## I just moved this repository. I am still creating this readme file.
