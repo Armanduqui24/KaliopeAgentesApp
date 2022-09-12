@@ -1,7 +1,9 @@
 # KaliopeAgentesApp
 This is the Android app available in Playstore. Moved from bitBucket
 
-## I just moved this repository. I am still creating this readme file.
+## Android App for the workers.
+This app is published in the Play Store Mexico under my developer account. This app includes an inventory management system, and manages the clients of each worker, it can operate either online or offline mode, it makes use of the GPS and portrays in an instance of google map API the location of the worker and the location in the city of each client, their status with a pushpin, name and a polygon like a digital fence. If a new client is created the location is saved on the phone displayed on the map and sent to the company server. The worker delivers new goods receive the payments and establish a connection with a Bluetooth receipt printer to hand in the receipt to the client while all the data is saved in an SQLite table, the inventory increase or decrease, if the phone has an internet connection sends the data to the server, if not, once the worker arrives to the warehouse and the app detects WIFI the app synchronizes automatically the data. An old version of this app included a QRCode Scanner with the Zxing library. This app is in PlayStore and is downloaded only for the employees of my company.
+
 ![Screenshot_20220911-182543_Kaliope](https://user-images.githubusercontent.com/105079888/189554395-5ada4fa9-90ee-41f8-83a9-b8df39e93373.jpg)
 
 ![Screenshot_20220911-182824_Kaliope](https://user-images.githubusercontent.com/105079888/189554401-06711d49-3b53-41fe-bc2d-e4d5d1d8b707.jpg)
