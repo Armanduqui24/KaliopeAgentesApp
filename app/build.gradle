@@ -8,7 +8,7 @@ android {
         applicationId "mx.kaliope.luisda"
         minSdkVersion 21
         targetSdkVersion 29 //24
-        versionCode 22
+        versionCode 23
         versionName "7.2.1"
 
         /*
@@ -128,7 +128,7 @@ android {
         * modificamos los mensajes de prioridad en los clientes para que aparescan las cuentas de mes en Normal
         * modificamos la pantalla informacion y agergamos numero de cuenta y CLABE
         * 
-        *7.2.1 versionCode22
+        *7.2.1 versionCode23
         * Cancelamos la entrega de puntos en la parte de entrega de mercancia en contado que se me olvido
         * jejejejej
         *

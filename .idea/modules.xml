@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/KaliopeVerSoundVib.iml" filepath="$PROJECT_DIR$/KaliopeVerSoundVib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KaliopeVerSoundVib.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KaliopeVerSoundVib.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kaliope-VerSoundVib.iml" filepath="$PROJECT_DIR$/.idea/modules/Kaliope-VerSoundVib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kaliope-VerSoundVib.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kaliope-VerSoundVib.app.iml" />
     </modules>
   </component>
 </project>
