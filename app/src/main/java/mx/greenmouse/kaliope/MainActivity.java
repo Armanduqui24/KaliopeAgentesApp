@@ -95,6 +95,8 @@ public class  MainActivity extends AppCompatActivity implements View.OnClickList
         getSupportActionBar().hide();
 
 
+        //Agrego comentario para checar la rama develp, comit inicial en develop
+
 
         if (ActivityCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
                 ActivityCompat.checkSelfPermission(this,Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED ||
