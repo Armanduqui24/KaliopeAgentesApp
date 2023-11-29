@@ -99,7 +99,8 @@ public class RealizarCierre extends AppCompatActivity {
             }
         });
 
-        /*
+        //Estaba comentado por que se avian cancelado puntos, vuelvo a descomentar por que volvimos a dar puntos
+
         pagoAdicionalPuntosB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,8 +134,8 @@ public class RealizarCierre extends AppCompatActivity {
                 regresarTomarPiezaDevolucion();
             }
         });
-        */
 
+        //Estaba comentado por que se avian cancelado puntos, vuelvo a descomentar por que volvimos a dar puntos
 
     }
 
@@ -168,9 +169,9 @@ public class RealizarCierre extends AppCompatActivity {
                 layoutPagoExtra.setVisibility(View.GONE);
             }
 
-
-            //calcularPuntosGanados();
-            calcularMensajeYcantidadParaGanarMasPuntos(0,0);
+            //Estaba comentada la funcion calcularPuntosGanados por que se habian cancelado los pts pero ya regresaron, entonces la descomente.
+            calcularPuntosGanados();
+            //calcularMensajeYcantidadParaGanarMasPuntos(0,0); //Me estaba dando problemas esta liena, y es que llama a la funcion pasando parametros en 0 0 y no marcaba el mensaje de calcular puntos asi que la comente a la verg.
 
 
         }
@@ -194,10 +195,6 @@ public class RealizarCierre extends AppCompatActivity {
 
             int ventaInverior = 0;
             int ventaSuperior = 500;
-
-
-
-
 
 
             //Este metodo se podria hacer mas sencillo con bucle for pero para fines de que el codigo
@@ -339,8 +336,8 @@ public class RealizarCierre extends AppCompatActivity {
 
         }
 
-
-        //puntosGanadosTV.setText(String.valueOf(puntosGanados));
+        //Estaba comentada la linea de abajo, para cancelar los puntos pero como ya volvieron se descomenta.
+        puntosGanadosTV.setText(String.valueOf(puntosGanados));
         calcularMensajeYcantidadParaGanarMasPuntos(ventaInverior,ventaSuperior);
 
 
@@ -359,11 +356,13 @@ public class RealizarCierre extends AppCompatActivity {
         Log.d("RealizarCierre10","inferior " + String.valueOf(ventainferior));
         Log.d("RealizarCierre10","Superior " + String.valueOf(ventaSuperior));
 
-        //cantidadFaltanteParaSiguientesPuntos = ventaSuperior - ventaTotalGenerada;
+        //Estaba comentada esta linea para cancelar los pts, la descomento para volver a dar puntos
+        cantidadFaltanteParaSiguientesPuntos = ventaSuperior - ventaTotalGenerada;
 
         Log.d("RealizarCierre10","cantidadParaSiguietnesPuntos " + String.valueOf(cantidadFaltanteParaSiguientesPuntos));
         Log.d("RealizarCierre10","ventaTotalGenerada " + String.valueOf(ventaTotalGenerada));
 
+        /*
         String mensaje;
         if(ventaTotalGenerada>=500) {
 
@@ -377,11 +376,12 @@ public class RealizarCierre extends AppCompatActivity {
             mensajeGanarMasPuntosET.setText(mensaje);
             siguienteB.setText("Ya la motive continuar a pagos->");
         }
+         */
 
 
 
+        //Estaba comentado por que se avian cancelado puntos, vuelvo a descomentar por que volvimos a dar puntos
 
-        /*
         if (ventaTotalGenerada>=500){
 
             String mensaje;
@@ -431,7 +431,7 @@ public class RealizarCierre extends AppCompatActivity {
 
 
         }else{
-        */
+
 
             //(Si la venta generada es menor de 500 se podria ganar en lugar de 50 100 puntos
             //
@@ -441,7 +441,7 @@ public class RealizarCierre extends AppCompatActivity {
 
 
 
-/*
+
             if (cantidadFaltanteParaSiguientesPuntos <=80){
 
                 String mensaje  = "No ha gando puntos porque la venta ha sido menor que $500 \n\n" +
@@ -476,16 +476,11 @@ public class RealizarCierre extends AppCompatActivity {
                 pagoAdicionalPuntosB.setVisibility(View.GONE);
                 regresarTomarPiezaDevolucionB.setVisibility(View.GONE);
                 siguienteB.setText("Ya la motive continuar a pagos->");
-            }*/
+            }
 
+            //Estaba comentado por que se avian cancelado puntos, vuelvo a descomentar por que volvimos a dar puntos
 
-
-
-
-
-
-
-
+        }
 
     }
 

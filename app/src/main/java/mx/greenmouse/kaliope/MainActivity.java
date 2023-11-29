@@ -173,7 +173,7 @@ public class  MainActivity extends AppCompatActivity implements View.OnClickList
         try{
             PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(),0);
 
-            tvVersionApp.setText("®Kaliope México 2018 Version:" + packageInfo.versionName);
+            tvVersionApp.setText("®Kaliope México 2024 Version: 7.3.0");// + packageInfo.versionName); Comento esta lineal por ahora no se de donde saca la informacion de la version el packageInfo, tal vez despues la averigue, por ahora pongo la version manualmente.
         }catch (PackageManager.NameNotFoundException e){
             e.printStackTrace();
         }
