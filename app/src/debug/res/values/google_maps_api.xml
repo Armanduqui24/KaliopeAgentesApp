@@ -19,9 +19,11 @@
 
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
+
+    Cambiamos la apiKey de google maps, esta era la api anterior AIzaSyDzkPJ-1fSV-xkIiBrwp6hElXXuOw4olIc
     -->
 
-    //Cambiamos la apiKey de google maps, esta era la api anterior AIzaSyDzkPJ-1fSV-xkIiBrwp6hElXXuOw4olIc
 
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDDQEYqS0u3eXQLPWtWJS107WPacgp3gVo</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAwUe2nMH5zzrpd4xvVSGoLyEmgOYNHNJw</string>
 </resources>
